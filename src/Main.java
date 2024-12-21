@@ -37,7 +37,7 @@ public class Main {
                     }
                     break;
                 case 3:
-//
+
                         List<Tasks> Tasks = todo.getTasks();
                     if(!Tasks.isEmpty()) {
                     for (int i = 0; i < Tasks.size(); i++) {
@@ -53,10 +53,13 @@ public class Main {
                 case 4:
                     System.out.println("Enter the task index to mark as completed:  ");
                     int PointIndex = in.nextInt();
-                    todo.MarkAsCompleted(PointIndex);
+                    if(PointIndex>=0){
+                    todo.MarkAsCompleted(PointIndex);}else {
+                        System.out.println("Enter the valid index!");
+                    }
                     break;
                 case 5:
-                    System.out.println("Thank you Bye bye.......");
+                    System.out.println("See you next time");
                     run = false;
                     break;
                 default:
@@ -70,14 +73,6 @@ public class Main {
         }
 
         in.close();
-
-
-
-
-
-
-
-
 
     }
 }
