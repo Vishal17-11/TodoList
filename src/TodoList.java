@@ -19,6 +19,7 @@ public class TodoList {
 
            if(tasks.size()> index  && index >=0   ){
                tasks.remove(index);
+               System.out.println("Task Removed..");
            }
 
 
@@ -29,6 +30,7 @@ public class TodoList {
 
     public void MarkAsCompleted(int index) {
             tasks.get(index).setTaskStatus(true);
+        System.out.println("Marked as done..");
     }
 
 
