@@ -44,7 +44,7 @@ public class Main {
                         Tasks task = Tasks.get(i);
 
 
-                        System.out.printf("%d. %s [%s] ", i, task.getTask(), task.getTaskStatus() ? "Completed" : "Not Completed");
+                        System.out.printf(i, task.getTask(), task.getTaskStatus() ? "Completed" : "Not Completed");
                     } }else{
                             System.out.println("There is no Tasks");
                         }
